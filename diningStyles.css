@@ -1,0 +1,93 @@
+.bestsellers h2 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    margin-top: 60px;
+    letter-spacing: 10px;
+}
+
+/* All 3 food items' general properties. */
+.food-item-1, .food-item-2, .food-item-3 {
+    margin: 60px 40px;
+    display: flex;
+    justify-content: left;
+    align-items: stretch;
+    gap: 30px;
+    font-size: 26px;
+    font-family: 'Space Mono', sans-serifs;
+    position: relative;
+    transition-duration: 0.2s;
+}
+
+/* 0 margin for paragraphs inside the food items. */
+.food-item-1 p, .food-item-2 p, .food-item-3 p {
+    margin: 0;
+}
+
+/* Italicize, bold, and color the dish names. */
+.dish-name {
+    font-weight: bold;
+    color: rgba(151, 67, 67, 0.678);
+}
+
+/* Set new margin for food item 2. (The one in the middle) */
+.food-item-2 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* Set same width for all food item images. */
+.food-item-1 img, .food-item-2 img, .food-item-3 img {
+    width: 60%;
+}
+
+/* Box shadow. */
+.food-item-1 img, .food-item-3 img {
+    /*flex-grow: 1;*/
+    box-shadow: 10px 17px 15px -5px rgb(69, 52, 41);
+}
+
+.food-item-2 img {
+    box-shadow: -10px 17px 15px -5px rgb(69, 52, 41);
+}
+
+/* Dish Name Tag*/
+.food-item-1::after, .food-item-2::after, .food-item-3::after {
+    position: absolute;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    border-style: solid;
+    font-size: 45px;
+    font-family: 'Croissant One';
+    transition-duration: 0.3s;
+    letter-spacing: 2px;
+}
+
+.food-item-1::after {
+    content: 'Pilaf';
+    border-width: 4px 0 0 0;
+}
+
+.food-item-1:hover::after {
+    border-width: 0 0 4px 0;
+}
+
+.food-item-2::after {
+    content: 'Samsa';
+    border-width: 0 0 4px 0;
+    right: 0;
+    bottom: 0;
+}
+
+.food-item-2:hover::after {
+    border-width: 4px 0 0 0;
+}
+
+.food-item-3::after {
+    content: 'Kebab';
+    border-width: 4px 0 0 0;
+}
+
+.food-item-3:hover::after {
+    border-width: 0 0 4px 0;
+}

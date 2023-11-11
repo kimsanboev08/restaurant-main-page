@@ -1,0 +1,67 @@
+.carousel {
+    position: relative;
+    margin: 100px auto;
+    width: 60%;
+    height: 40%;
+    padding-left: 100px;
+    background-color: #F6EFEE;
+    box-shadow: 0 0 10px 10px #F6EFEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+}
+
+#plate {
+    background-image: url("Assets/images/steak.jpg");
+    background-size: cover;
+    padding: 180px;
+    transform: scale(1.3);
+    border-radius: 3px;
+}
+
+#carousel-text {
+    padding: 0 50px 0 80px;
+    font-size: 25px;
+    line-height: 2;
+    align-self: center;
+}
+
+.carousel button {
+    position: absolute;
+    border: 0;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    box-shadow: 0 0 3px 2px white;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-arrow-button {
+    left: 0;
+    transform: translate(-70%, -50%);
+}
+
+.right-arrow-button {
+    right: 0;
+    transform: translate(70%, -50%);
+}
+
+.arrow {
+    border: solid #72858C;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.right {
+    transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+}

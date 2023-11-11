@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.header-tab {
+    padding: 10px 15px 25px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(223, 211, 187);
+    /*background-color: #fffded;*/
+}
+
+.header-tab div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    margin: 10px 0 0 20px;
+}
+
+.header-tab div h1 {
+    margin: 0;
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+
+.letter-s {
+    max-width: 100px;
+}
+
+.tab-items {
+    justify-content: space-around;
+}
+
+.tab-items p {
+    font-size: 20px;
+    margin: 0 25px -6.3% 0;
+}
+
+.tab-items a:link, .tab-items a:visited  {
+    color: black;
+    text-decoration: none;
+}
+
+.tab-items p:hover {
+    color: rgba(151, 67, 67, 0.678);
+}
+
+.tab-items a:hover {
+    color: rgba(151, 67, 67, 0.678);
+}
+
+.tab-items p:last-child {
+    margin-left: 35px;
+    border-style: solid;
+    padding: 4px 5px;
+    border-width: 2px;
+    border-radius: 3px;
+}
+
+.header-meal-time {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 50px 20px 20px 20px;
+    background-color: rgb(223, 211, 187);
+    box-shadow: 0 30px 15px 10px rgb(223, 211, 187),
+                0 60px 30px 25px #ebebeb;
+}
+
+.header-meal-time div {
+    width: 450px;
+    height: 450px;
+    background-size: 100% 100%;
+}
+
+.breakfast, .lunch, .dinner {
+    border-radius: 3px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px 7.5px white,
+                0 0 5px 5px white inset;
+}
+
+.breakfast{
+    background-image: url("Assets/images/breakfast.jpg");
+}
+
+.lunch {
+    background-image: url("Assets/images/lunch.jpg");
+}
+
+.dinner {
+    background-image: url("Assets/images/dinner.jpg");
+}
+
+.header-meal-time p {
+    font-size: 40px;
+    color: white;
+    padding: 20px;
+    margin: 15px;
+    border-style: solid;
+    padding: 0 5px 5px 5px;
+    border-width: 0px 0px 5px 5px;
+    display: inline-block;
+    transition-duration: 0.2s;
+    letter-spacing: 1px;
+}
+
+.header-meal-time p:hover {
+    border-width: 5px 5px 0px 0px;
+    transition-duration: 0.2s;
+}
+
+.takeout {
+    width: 40px;
+    height: 45px;
+    background-color: rgb(201, 93, 93);
+    display: flex;
+    position: fixed !important;
+    right: 0;
+    top: 15%;
+    margin: 0;
+    border: 0;
+    border-radius: 3px 0 0 3px;
+    align-items: center;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.takeout:hover {
+    width: 180px;
+    transition: 0.3s;
+}
+
+.takeout p {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    letter-spacing: 2.5px;
+}
+
+
+.material-symbols-outlined {
+    color: white;
+    margin: 0;
+    padding: 8px 10px 8px 8px;
+}
+
+.screen-2 {
+    background-color: #ebebeb;
+    margin-top: 50px;
+    padding-top: 1px;
+    box-shadow: 0 30px 15px 10px #ebebeb,
+                0 60px 30px 25px #72858C,
+                0 -30px 15px 10px #ebebeb;
+
+}
+
+.part-1 {
+    display: grid;
+    margin: 30px 35px;
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: 500px;
+    gap: 40px;
+}
+
+.part-1 div:first-child {
+    background-image: url("Assets/images/spices.jpg");
+    box-shadow: 0 0 5px 5px white inset,
+                0 0 15px 15px white;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.part-1 div:first-child p {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding-right: 40px;
+}
+
+.bullets {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'Crimson Pro';
+}
+
+.bullets p:nth-child(even) {
+    color: rgba(151, 67, 67, 0.678);
+}
+
+.info {
+    text-align: center;
+    grid-column: 1 / 3;
+    font-size: 25px;
+    line-height: 2;
+    font-family: 'Crimson Pro';
+}
+
+.info div {
+    flex-basis: 33%;
+}
+
+.screen-3 {
+    background-color: #72858C;
+    margin-top: 50px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 0;
+    box-shadow: 0 0 25px 20px #72858C;
+}
